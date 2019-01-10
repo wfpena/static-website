@@ -8,7 +8,7 @@ app.use(express.static(__dirname + '/'));
 
 app.get('/*', function(req,res) {
   
-res.sendFile('test.html');
+res.sendFile(path.join(__dirname + '/test.html'));
 //res.sendFile(path.join(__dirname+'/dist/angular-app/index.html'));
 });
 
